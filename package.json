@@ -20,7 +20,8 @@
         "build": "npm run lint && next build",
         "start": "dotenv -- next start",
         "lint": "tsc --noEmit && oxlint && oxfmt --check",
-        "fmt": "oxfmt"
+        "fmt": "oxfmt",
+        "typegen": "next typegen"
     },
     "dependencies": {
         "@monaco-editor/react": "^4.7.0",
