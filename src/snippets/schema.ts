@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod/v4";
 
 export const snippetSchema = z.object({
     id: z.string(),
@@ -6,3 +6,5 @@ export const snippetSchema = z.object({
     language: z.string(),
     content: z.string(),
 });
+
+export type Snippet = z.infer<typeof snippetSchema>;
