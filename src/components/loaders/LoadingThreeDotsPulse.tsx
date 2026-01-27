@@ -9,7 +9,7 @@ export default function LoadingThreeDotsPulse() {
             transition: {
                 duration: 0.8,
                 repeat: Infinity,
-                ease: "easeInOut",
+                ease: "easeInOut" as const,
             },
         },
     };
