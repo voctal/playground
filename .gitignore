@@ -16,5 +16,8 @@
 # playground
 /snippets/
 
+# typescript
+*.tsbuildinfo
+
 # misc
 *.zip
