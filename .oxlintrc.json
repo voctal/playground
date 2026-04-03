@@ -1,5 +1,5 @@
 {
     "$schema": "./node_modules/oxlint/configuration_schema.json",
-    "plugins": ["eslint", "typescript", "unicorn", "oxc", "nextjs"],
-    "ignorePatterns": ["node_modules", ".next", "dist", "package-lock.json"]
+    "plugins": ["eslint", "typescript", "unicorn", "oxc", "nextjs", "react"],
+    "ignorePatterns": ["node_modules", ".next", "dist", "package-lock.json", "snippets/"]
 }

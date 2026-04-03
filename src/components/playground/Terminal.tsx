@@ -1,10 +1,10 @@
 "use client";
 
 import { useShallow } from "zustand/react/shallow";
-import { ExecutionState, useExecutionStore } from "@/stores/execution";
-import { Separator } from "@/components/ui/separator";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import LoadingThreeDotsPulse from "@/components/loaders/LoadingThreeDotsPulse";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Separator } from "@/components/ui/separator";
+import { ExecutionState, useExecutionStore } from "@/stores/execution";
 
 export default function Terminal() {
     const [executionState, executionResult] = useExecutionStore(

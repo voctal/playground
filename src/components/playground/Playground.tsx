@@ -1,22 +1,22 @@
 "use client";
 
+import Editor, { type OnChange, useMonaco } from "@monaco-editor/react";
+import type { editor } from "monaco-editor";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useShallow } from "zustand/react/shallow";
 import { toast } from "sonner";
-import type { editor } from "monaco-editor";
-import Editor, { type OnChange, useMonaco } from "@monaco-editor/react";
+import { useShallow } from "zustand/react/shallow";
+import { ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable";
+import { EDITOR_CHARACTER_LIMIT } from "@/config/constants";
+import useWindowWidth from "@/hooks/useWindowWidth";
+import { transpileTypeScript } from "@/lib/utils";
+import type { Snippet } from "@/snippets/schema";
 import { useApplicationStore } from "@/stores/application";
 import { useEditorStore } from "@/stores/editor";
-import { ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable";
-import type { Snippet } from "@/snippets/schema";
-import Terminal from "./Terminal";
 import { initializeMonaco } from "./monaco";
-import SecondaryEditor, { SecondaryEditorType } from "./SecondaryEditor";
 import ResizableHandleWrapper from "./ResizableHandleWrapper";
-import { transpileTypeScript } from "@/lib/utils";
-import useWindowWidth from "@/hooks/useWindowWidth";
-import { EDITOR_CHARACTER_LIMIT } from "@/config/constants";
+import SecondaryEditor, { SecondaryEditorType } from "./SecondaryEditor";
+import Terminal from "./Terminal";
 
 export default function Playground({ snippet }: { snippet?: Snippet }) {
     const [isSnippet, setIsSnipped] = useApplicationStore(useShallow(state => [state.isSnippet, state.setIsSnipped]));

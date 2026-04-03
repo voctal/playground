@@ -1,8 +1,8 @@
 import { readFile } from "node:fs/promises";
+import { notFound } from "next/navigation";
 import Playground from "@/components/playground/Playground";
 import { getSnippetFiles, SNIPPETS_DIRECTORY } from "@/snippets/fs";
 import { snippetSchema } from "@/snippets/schema";
-import { notFound } from "next/navigation";
 
 export default async ({ params }: PageProps<"/share/[id]">) => {
     const id = (await params).id;

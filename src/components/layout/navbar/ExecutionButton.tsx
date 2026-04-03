@@ -1,11 +1,11 @@
 "use client";
 
 import { PauseIcon, TriangleIcon } from "lucide-react";
-import { useShallow } from "zustand/react/shallow";
 import { toast } from "sonner";
+import { useShallow } from "zustand/react/shallow";
 import { Button } from "@/components/ui/button";
-import { type ExecutionResult, ExecutionState, useExecutionStore } from "@/stores/execution";
 import { useEditorStore } from "@/stores/editor";
+import { type ExecutionResult, ExecutionState, useExecutionStore } from "@/stores/execution";
 
 export default function ExecutionButton() {
     const [value, language] = useEditorStore(useShallow(state => [state.value, state.language]));

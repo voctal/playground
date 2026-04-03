@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import type { Position } from "monaco-editor";
-import { ExecutionState, useExecutionStore } from "@/stores/execution";
-import { useEditorStore } from "@/stores/editor";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { useEditorStore } from "@/stores/editor";
+import { ExecutionState, useExecutionStore } from "@/stores/execution";
 
 export default function Footer() {
     const editor = useEditorStore(state => state.editor);

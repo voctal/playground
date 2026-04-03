@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { useShallow } from "zustand/react/shallow";
 import { CopyIcon, LinkIcon } from "lucide-react";
+import { useState } from "react";
 import { toast } from "sonner";
-import { useApplicationStore } from "@/stores/application";
-import { useEditorStore } from "@/stores/editor";
+import { useShallow } from "zustand/react/shallow";
 import { Button } from "@/components/ui/button";
 import {
     Dialog,
@@ -19,6 +17,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
+import { useApplicationStore } from "@/stores/application";
+import { useEditorStore } from "@/stores/editor";
 
 export default function ShareDialog({ className }: { className?: string }) {
     const [shareLink, setShareLink] = useApplicationStore(useShallow(state => [state.shareLink, state.setShareLink]));

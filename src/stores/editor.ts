@@ -1,5 +1,5 @@
-import { create } from "zustand";
 import type { editor } from "monaco-editor";
+import { create } from "zustand";
 
 export interface EditorStore {
     language: string;

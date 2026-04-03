@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import SodiumLabsIcon from "@/icons/brands/SodiumLabsIcon";
-import LanguageDropdown from "./LanguageDropdown";
+import ExecutionButton from "./ExecutionButton";
+import ExecutionStateBadge from "./ExecutionStateBadge";
 import GitHubDropdown from "./GitHubDropdown";
+import LanguageDropdown from "./LanguageDropdown";
 import ShareDialog from "./ShareDialog";
 import Sidebar from "./Sidebar";
-import ExecutionStateBadge from "./ExecutionStateBadge";
-import ExecutionButton from "./ExecutionButton";
 
 export default function Navbar() {
     return (

@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { MoonIcon, TriangleIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useShallow } from "zustand/react/shallow";
-import { ExecutionState, useExecutionStore } from "@/stores/execution";
 import { cn } from "@/lib/utils";
+import { ExecutionState, useExecutionStore } from "@/stores/execution";
 
 export default function ExecutionStateBadge() {
     const [executionState, executionStart] = useExecutionStore(

@@ -1,7 +1,6 @@
 "use client";
 
 import { useShallow } from "zustand/react/shallow";
-import { useEditorStore } from "@/stores/editor";
 import {
     Select,
     SelectContent,
@@ -13,6 +12,7 @@ import {
 } from "@/components/ui/select";
 import { languages } from "@/config/constants";
 import { cn } from "@/lib/utils";
+import { useEditorStore } from "@/stores/editor";
 import { ExecutionState, useExecutionStore } from "@/stores/execution";
 
 export default function LanguageDropdown({ className }: { className?: string }) {

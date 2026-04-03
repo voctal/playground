@@ -4,5 +4,8 @@
     "arrowParens": "avoid",
     "tabWidth": 4,
     "useTabs": false,
-    "ignorePatterns": ["node_modules", ".next", "dist", "package-lock.json"]
+    "sortImports": {
+        "newlinesBetween": false
+    },
+    "ignorePatterns": ["node_modules", ".next", "dist", "package-lock.json", "snippets/"]
 }
