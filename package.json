@@ -4,15 +4,15 @@
     "version": "1.1.4",
     "private": true,
     "description": "Quickly test code snippets in your browser, whenever you need.",
-    "homepage": "https://github.com/sodium-labs/playground",
+    "homepage": "https://github.com/voctal/playground",
     "bugs": {
-        "url": "https://github.com/sodium-labs/playground/issues"
+        "url": "https://github.com/voctal/playground/issues"
     },
     "license": "Apache-2.0",
-    "author": "SodiumLabs",
+    "author": "voctal",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sodium-labs/playground.git"
+        "url": "git+https://github.com/voctal/playground.git"
     },
     "type": "module",
     "scripts": {

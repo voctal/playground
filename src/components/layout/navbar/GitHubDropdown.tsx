@@ -11,7 +11,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { REPOSITORY_URL, SODIUM_LABS_GITHUB_URL } from "@/config/links";
+import { REPOSITORY_URL, VOCTAL_GITHUB_URL } from "@/config/links";
 import GitHubIcon from "@/icons/brands/GithubIcon";
 
 export default function GitHubDropdown({ className }: { className?: string }) {
@@ -28,12 +28,12 @@ export default function GitHubDropdown({ className }: { className?: string }) {
                 <DropdownMenuGroup>
                     <DropdownMenuItem>
                         <Link prefetch={false} href={REPOSITORY_URL} target="_blank" rel="noreferrer">
-                            sodium-labs/playground
+                            voctal/playground
                         </Link>
                     </DropdownMenuItem>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem className="tracking-wide">
-                        <Link prefetch={false} href={SODIUM_LABS_GITHUB_URL} target="_blank" rel="noreferrer">
+                        <Link prefetch={false} href={VOCTAL_GITHUB_URL} target="_blank" rel="noreferrer">
                             View all projects
                         </Link>
                     </DropdownMenuItem>

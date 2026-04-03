@@ -5,4 +5,4 @@ Disallow: /share/
 Disallow: /api
 Disallow: /api/
 
-Sitemap: https://playground.sodiumlabs.xyz/sitemap.xml
+Sitemap: https://playground.voctal.dev/sitemap.xml

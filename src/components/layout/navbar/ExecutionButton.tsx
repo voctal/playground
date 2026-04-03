@@ -19,7 +19,7 @@ export default function ExecutionButton() {
 
         try {
             const response = await fetch(
-                `https://plume.sodiumlabs.xyz/api/exec?language=${encodeURIComponent(
+                `https://plume.voctal.dev/api/exec?language=${encodeURIComponent(
                     language,
                 )}&code=${encodeURIComponent(value)}`,
             );

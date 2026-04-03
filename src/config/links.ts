@@ -1,6 +1,6 @@
-export const SODIUM_LABS_GITHUB_URL = "https://github.com/sodium-labs";
+export const VOCTAL_GITHUB_URL = "https://github.com/voctal";
 
-export const REPOSITORY_URL = "https://github.com/sodium-labs/playground";
+export const REPOSITORY_URL = "https://github.com/voctal/playground";
 
 export const BASE_URL =
-    process.env.NODE_ENV === "production" ? "https://playground.sodiumlabs.xyz" : "http://localhost:3000";
+    process.env.NODE_ENV === "production" ? "https://playground.voctal.dev" : "http://localhost:3000";

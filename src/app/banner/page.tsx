@@ -3,7 +3,7 @@
 
 import { notFound } from "next/navigation";
 import { Boxes } from "@/components/ui/background-boxes";
-import SodiumLabsIcon from "@/icons/brands/SodiumLabsIcon";
+import VoctalIcon from "@/icons/brands/VoctalIcon";
 
 export default () => {
     if (process.env.NODE_ENV === "production") {
@@ -17,8 +17,8 @@ export default () => {
                 <Boxes className="opacity-50" />
                 <div className="relative z-20 flex h-full flex-col items-center justify-center gap-1">
                     <div className="flex items-center gap-2 text-zinc-300">
-                        <SodiumLabsIcon className="size-12" />
-                        <span className="font-mono text-xl">Sodium Labs</span>
+                        <VoctalIcon className="size-12" />
+                        <span className="font-mono text-xl">Voctal</span>
                     </div>
                     <span className="cascadia-code text-[6rem] font-medium tracking-tight text-zinc-100">
                         Code Playground

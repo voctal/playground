@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import SodiumLabsIcon from "@/icons/brands/SodiumLabsIcon";
+import VoctalIcon from "@/icons/brands/VoctalIcon";
 import ExecutionButton from "./ExecutionButton";
 import ExecutionStateBadge from "./ExecutionStateBadge";
 import GitHubDropdown from "./GitHubDropdown";
@@ -13,7 +13,7 @@ export default function Navbar() {
         <nav className="flex h-[var(--navbar-height)] items-center justify-between border-b border-zinc-700 px-3 md:px-4 lg:px-8">
             <div className="flex h-[40%] items-center gap-2">
                 <Link href="/" className="cascadia-code flex items-center gap-2">
-                    <SodiumLabsIcon className="size-7" />
+                    <VoctalIcon className="size-7" />
                     <span className="max-lg:hidden">Code Playground</span>
                 </Link>
 

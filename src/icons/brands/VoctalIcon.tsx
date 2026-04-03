@@ -1,4 +1,4 @@
-export default function SodiumLabsIcon({ className }: { className?: string }) {
+export default function VoctalIcon({ className }: { className?: string }) {
     return (
         <svg
             className={className}
